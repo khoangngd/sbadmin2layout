@@ -3,15 +3,17 @@
       layout:decorate="~{layout/layout}">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
-    <link th:href="@{css/index.css}" rel="stylesheet" />
+    <title>Schedule</title>
+    <link th:href="@{css/schedule.css}" rel="stylesheet" />
 </head>
 <body>
-<div layout:fragment="content" ng-controller="page.index as vm">
+<div layout:fragment="content" ng-controller="page.schedule as vm">
+
+    schedule page
 
 </div>
 <th:block layout:fragment="script">
-    <script th:src="@{js/index.js}"></script>
+    <script th:src="@{js/schedule.js}"></script>
 </th:block>
 </body>
 </html>

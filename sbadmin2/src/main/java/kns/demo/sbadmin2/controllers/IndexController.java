@@ -17,5 +17,15 @@ public class IndexController {
         return "layout/layout";
     }
 
+    @GetMapping("/schedule")
+    public String schedulePage(){
+        return "page/schedule";
+    }
+
+    @GetMapping("/quartz")
+    public String quartzPage(){
+        return "page/quartz";
+    }
+
 
 }
