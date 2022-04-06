@@ -8,7 +8,18 @@
 </head>
 <body>
 <div layout:fragment="content" ng-controller="page.index as vm">
+    <h1>Spring Boot + Internationalization</h1>
+    Language :
+    <a href="?lang=en">English</a>|
+    <a href="?lang=vi">Viet Nam</a>|
 
+<!--    <p th:text="${message}">User test</p>-->
+    <p th:text="#{hello}"></p>
+    <p>[[#{hello}]] [[#{welcome}]] </p>
+    <br />
+
+</div>
+</body>
 </div>
 <th:block layout:fragment="script">
     <script th:src="@{js/index.js}"></script>
